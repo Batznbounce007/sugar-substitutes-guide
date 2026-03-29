@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaSweet | Zuckerersatz-Kompass für Diabetiker</title>
+    <meta name="description"
+        content="Vergleiche Stevia, Erythrit, Allulose und andere Zuckerersatzstoffe für Diabetiker und eine zuckerfreie Ernährung. Finde die beste Alternative für dich!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS (CDN for simple setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        card: 'hsl(var(--card))',
+                        'card-foreground': 'hsl(var(--card-foreground))',
+                        popover: 'hsl(var(--popover))',
+                        'popover-foreground': 'hsl(var(--popover-foreground))',
+                        primary: 'hsl(var(--primary))',
+                        'primary-foreground': 'hsl(var(--primary-foreground))',
+                        secondary: 'hsl(var(--secondary))',
+                        'secondary-foreground': 'hsl(var(--secondary-foreground))',
+                        muted: 'hsl(var(--muted))',
+                        'muted-foreground': 'hsl(var(--muted-foreground))',
+                        accent: 'hsl(var(--accent))',
+                        'accent-foreground': 'hsl(var(--accent-foreground))',
+                        destructive: 'hsl(var(--destructive))',
+                        'destructive-foreground': 'hsl(var(--destructive-foreground))',
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                        radius: 'var(--radius)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-foreground antialiased min-h-screen flex flex-col font-sans">
+    <div id="app" class="flex flex-col min-h-screen w-full">
+        <!-- Header -->
+        <header
+            class="w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+            <div class="container mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
+                <a href="#" class="flex items-center gap-2 font-bold text-xl text-primary" data-route="home">
+                    <i data-lucide="leaf" class="h-6 w-6"></i>
+                    <span>DiaSweet</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a href="#/" class="transition-colors hover:text-foreground/80 text-foreground/60"
+                        data-route="home">Startseite</a>
+                    <a href="#/guide" class="transition-colors hover:text-foreground/80 text-foreground/60"
+                        data-route="guide">Ratgeber</a>
+                    <a href="#/about" class="transition-colors hover:text-foreground/80 text-foreground/60"
+                        data-route="about">Über uns</a>
+                    <div id="lang-toggle"
+                        class="flex items-center gap-2 border border-border px-3 py-1.5 rounded-full text-xs cursor-pointer bg-white/50 hover:bg-white shadow-sm transition-all">
+                        <span class="opacity-100 font-bold">DE</span> <span class="opacity-40 font-normal">EN</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="flex-1 w-full">
+            <!-- Content will be dynamically loaded here by app.js -->
+        </main>
+
+        <footer class="w-full border-t border-border mt-auto py-6 md:py-0">
+            <div
+                class="container mx-auto max-w-7xl px-4 flex flex-col md:flex-row md:h-20 items-center justify-between">
+                <p class="text-sm leading-loose text-center md:text-left text-muted-foreground">
+                    &copy; 2026 DiaSweet. Made with ❤️ by a Diabetic.
+                </p>
+                <div class="flex items-center gap-4 text-sm font-medium text-muted-foreground mt-4 md:mt-0">
+                    <a href="#/impressum" class="hover:underline underline-offset-4">Impressum</a>
+                    <a href="#" class="hover:underline underline-offset-4">Datenschutz</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js?v=8"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

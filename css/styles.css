@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* SweetSwap Color Palette */
+        /* Background: Light beige/cream #F4F2EB -> HSL 48, 25%, 94% */
+        --background: 44 26% 94%;
+        /* Foreground: Dark gray/green #1E2922 -> HSL 141, 15%, 14% */
+        --foreground: 141 15% 14%;
+
+        /* Card: White #FFFFFF */
+        --card: 0 0% 100%;
+        --card-foreground: 141 15% 14%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 141 15% 14%;
+
+        /* Primary: Dark Green #34614A -> HSL 149, 30%, 29% */
+        --primary: 149 30% 29%;
+        --primary-foreground: 0 0% 100%;
+
+        /* Secondary: Light gray/beige for buttons #EAE6DE -> HSL 45, 17%, 89% */
+        --secondary: 45 17% 89%;
+        --secondary-foreground: 141 15% 14%;
+
+        /* Muted: Lighter background for less important things */
+        --muted: 45 17% 89%;
+        --muted-foreground: 141 6% 40%;
+
+        --accent: 45 17% 89%;
+        --accent-foreground: 141 15% 14%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        /* Border: Subtle line color */
+        --border: 45 15% 85%;
+        --input: 45 15% 85%;
+        --ring: 149 30% 29%;
+
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Custom Utilities that might be handy */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Hide scrollbar for category pills if they overflow */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
