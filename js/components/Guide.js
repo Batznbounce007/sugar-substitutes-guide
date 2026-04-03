@@ -39,29 +39,29 @@ export async function renderGuide(container) {
                             </div>
                             <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Parents</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Your child has diabetes and you want them to enjoy treats without feeling restricted. Learn which alternatives keep your child's blood sugar stable and don't require insulin.
+                                Your child has Type 1 diabetes and you want them to enjoy treats without the constant "spiking" and dangerous blood sugar highs. Learn which alternatives are safest for growing bodies and insulin sensitivity.
                             </p>
                         </div>
 
-                        <!-- Profile 2: Caregivers -->
+                        <!-- Profile 2: Type 2 -->
                         <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
                             <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
-                                <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                                <i data-lucide="activity" class="w-7 h-7"></i>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Relatives</h3>
+                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Type 2 Management</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Helping older parents manage their Type 2 diabetes can be stressful. Discover easy 1:1 sugar replacements so they can still enjoy their afternoon cake without the blood sugar spike.
+                                Managing insulin resistance means avoiding insulin peaks. We show you which sweeteners help lower your HbA1c and support weight loss without sacrificing the joy of eating.
                             </p>
                         </div>
 
-                        <!-- Profile 3: Individuals -->
+                        <!-- Profile 3: Advanced T1 -->
                         <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-                                <i data-lucide="user-check" class="w-7 h-7"></i>
+                            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mb-6">
+                                <i data-lucide="zap" class="w-7 h-7"></i>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">For You</h3>
+                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">T1 Pros (ICT/Pump)</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Cut through the marketing noise online. Gain absolute clarity on what impacts your blood sugar, what requires insulin, and what you can enjoy completely freely.
+                                Master your "Time in Range". Understand exactly when a substitute requires 0 bolus and where some hidden carbs might still hide (e.g. in Maltitol or bulked Stevia).
                             </p>
                         </div>
                     </div>
@@ -309,36 +309,36 @@ export async function renderGuide(container) {
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Profile 1: Parents -->
+                        <!-- Profile 1: Eltern -->
                         <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
                             <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 mb-6">
                                 <i data-lucide="baby" class="w-7 h-7"></i>
                             </div>
                             <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Eltern</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Dein Kind hat Diabetes und du möchtest trotzdem unbeschwerte Momente beim Kuchenessen und Naschen ermöglichen. Erfahre, welche Alternativen den Blutzuckerspiegel deines Kindes nicht belasten und kein Insulin erfordern.
+                                Dein Kind hat Typ 1 Diabetes und soll Kind sein dürfen. Wir helfen dir, Leckereien zu finden, die keine künstlichen Zuckerhochs auslösen und das Blutzucker-Management erleichtern.
                             </p>
                         </div>
 
-                        <!-- Profile 2: Caregivers -->
+                        <!-- Profile 2: Typ 2 Fokus -->
                         <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
                             <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
-                                <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                                <i data-lucide="activity" class="w-7 h-7"></i>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Angehörige</h3>
+                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Typ 2 Management</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Älteren Eltern bei Typ-2-Diabetes zu helfen, kann stressig sein. Entdecke einfache 1:1-Zuckerersatzstoffe, damit sie ihren Nachmittagskuchen weiterhin ohne Blutzuckerspitzen genießen können.
+                                Bei Insulinresistenz zählt jeder Peak. Entdecke Alternativen, die beim Abnehmen helfen, die Bauchspeicheldrüse entlasten und deinen HbA1c-Wert langfristig verbessern.
                             </p>
                         </div>
 
-                        <!-- Profile 3: Individuals -->
+                        <!-- Profile 3: Typ 1 Profis -->
                         <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-                                <i data-lucide="user-check" class="w-7 h-7"></i>
+                            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mb-6">
+                                <i data-lucide="zap" class="w-7 h-7"></i>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Dich</h3>
+                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Typ 1 Profis (ICT/Pumpe)</h3>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Durchblicke das Marketing-Chaos im Netz. Bekomme absolute Klarheit darüber, was deinen Blutzucker beeinflusst, wofür du Insulin brauchst und was du völlig frei genießen kannst.
+                                Optimiere deine "Time in Range". Erfahre genau, wann du 0 Einheiten spritzen musst und wo sich versteckte Kohlenhydrate (z.B. in Maltit) lauern, die einen Bolus erfordern.
                             </p>
                         </div>
                     </div>

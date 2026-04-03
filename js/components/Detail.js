@@ -167,6 +167,35 @@ export async function renderDetail(container, item) {
             : 'Hinweis: Die Reaktion auf Ersatzstoffe ist individuell. Starte mit kleinen Mengen, um deine persönliche Verträglichkeit zu testen.'}
                             </p>
                         </section>
+
+                        <!-- ELID: Beginner vs Advanced -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Beginner Box -->
+                            <section class="bg-blue-50/50 rounded-3xl p-8 border border-blue-100 shadow-sm">
+                                <h3 class="text-xl font-serif font-bold mb-4 flex items-center gap-2 text-blue-900">
+                                    <i data-lucide="info" class="text-blue-500 w-5 h-5"></i> ${t('elid.beginner_title')}
+                                </h3>
+                                <p class="text-blue-900/80 text-sm leading-relaxed mb-4">
+                                    ${t('elid.beginner_text')}
+                                </p>
+                                <div class="p-3 bg-white/60 rounded-xl border border-blue-100 text-xs text-blue-800 italic">
+                                    ${t('elid.time_in_range')}
+                                </div>
+                            </section>
+
+                            <!-- Advanced Box -->
+                            <section class="bg-purple-50/50 rounded-3xl p-8 border border-purple-100 shadow-sm">
+                                <h3 class="text-xl font-serif font-bold mb-4 flex items-center gap-2 text-purple-900">
+                                    <i data-lucide="zap" class="text-purple-500 w-5 h-5"></i> ${t('elid.advanced_title')}
+                                </h3>
+                                <p class="text-purple-900/80 text-sm leading-relaxed mb-4">
+                                    ${t('elid.advanced_text')}
+                                </p>
+                                <div class="p-3 bg-white/60 rounded-xl border border-purple-100 text-xs text-purple-800 font-bold">
+                                    ${t('elid.t1_tip')}
+                                </div>
+                            </section>
+                        </div>
                     </div>
 
                     <!-- Right: Stats Sidebar -->
@@ -190,6 +219,10 @@ export async function renderDetail(container, item) {
                                 <div class="bg-[#F8F7F4] rounded-2xl p-4 flex items-center justify-between group hover:bg-muted/10 transition-colors">
                                     <span class="text-sm font-medium text-muted-foreground w-1/2">${t('card.blood_sugar')}</span>
                                     <span class="font-bold text-[17px] ${item.bloodSugarImpact === 'Niedrig' || bloodSugarImpact === 'Low' ? 'text-primary' : 'text-foreground'}">${bloodSugarImpact}</span>
+                                </div>
+                                <div class="bg-[#F8F7F4] rounded-2xl p-4 flex items-center justify-between group hover:bg-muted/10 transition-colors">
+                                    <span class="text-sm font-medium text-muted-foreground w-1/2">${t('elid.be_count')}</span>
+                                    <span class="font-bold text-lg">${getBECount(item.glycemicIndex)} BE / 100g</span>
                                 </div>
                                 <div class="bg-[#F8F7F4] rounded-2xl p-4 flex items-center justify-between group hover:bg-muted/10 transition-colors">
                                     <span class="text-sm font-medium text-muted-foreground w-1/2">${t('detail.price')}</span>
@@ -238,4 +271,10 @@ function getInsulinLabel(gi) {
     if (gi === 0) return t('detail.no_impact');
     if (gi < 15) return t('detail.low');
     return t('detail.high');
+}
+
+function getBECount(gi) {
+    if (gi === 0) return "0";
+    if (gi < 15) return "0.1 - 0.2";
+    return "0.5 - 1.0";
 }
