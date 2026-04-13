@@ -26,10 +26,7 @@ export const substitutes = [
         priceTextEn: 'approx. 8-12€ / kg',
         affiliateLink: 'https://www.amazon.de/s?k=erythrit+nahrungsmittel+kaufen',
         amazonRating: 4.8,
-        amazonReviews: 12503,
-        redFlags: ["Kühleffekt im Mund", "Geringe Blähgefahr bei Übermaß"],
-        redFlagsEn: ["Cooling effect in mouth", "Laxative effect in extreme amounts"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 5, 5, 5, 5] }
+        amazonReviews: 12503
     },
     {
         id: 'xylit',
@@ -58,10 +55,7 @@ export const substitutes = [
         priceTextEn: 'approx. 10-14€ / kg',
         affiliateLink: 'https://www.amazon.de/s?k=xylit+birkenzucker+kaufen',
         amazonRating: 4.7,
-        amazonReviews: 8912,
-        redFlags: ["Hochgiftig für Hunde!", "Kalorienreich (40% von Zucker)", "Abführend bei Übermaß"],
-        redFlagsEn: ["Highly toxic to dogs!", "Contains 40% of sugar calories", "Laxative effect if overconsumed"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 12, 18, 12, 6] }
+        amazonReviews: 8912
     },
     {
         id: 'stevia',
@@ -90,10 +84,7 @@ export const substitutes = [
         priceTextEn: 'approx. 30-50€ / kg (pure)',
         affiliateLink: 'https://www.amazon.de/s?k=stevia+kaufen',
         amazonRating: 4.5,
-        amazonReviews: 6241,
-        redFlags: ["Leichter Lakritz-Beigeschmack", "Oft mit Füllstoffen (Maltodextrin) gestreckt"],
-        redFlagsEn: ["Slight licorice aftertaste", "Often bulked with fillers like maltodextrin"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 5, 5, 5, 5] }
+        amazonReviews: 6241
     },
     {
         id: 'agavendicksaft',
@@ -122,10 +113,7 @@ export const substitutes = [
         priceTextEn: 'approx. 8-15€ / Liter',
         affiliateLink: 'https://www.amazon.de/s?k=agavendicksaft+bio',
         amazonRating: 4.6,
-        amazonReviews: 3452,
-        redFlags: ["Fast wie Zucker (GI 15)", "Hohe Fructose-Belastung für die Leber"],
-        redFlagsEn: ["Acts almost like sugar (GI 15)", "High fructose load for the liver"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 30, 45, 30, 10] }
+        amazonReviews: 3452
     },
     {
         id: 'kokosbluetenzucker',
@@ -154,10 +142,7 @@ export const substitutes = [
         priceTextEn: 'approx. 12-20€ / kg',
         affiliateLink: 'https://www.amazon.de/s?k=kokosbluetenzucker+bio',
         amazonRating: 4.7,
-        amazonReviews: 5312,
-        redFlags: ["Hoher GI (35) - fast wie Zucker", "Kann Heißhunger triggern", "Muss voll gespritzt werden"],
-        redFlagsEn: ["High GI (35) - almost like sugar", "May trigger sweet cravings", "Requires full insulin dosage"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 45, 65, 45, 20] }
+        amazonReviews: 5312
     },
     {
         id: 'honig',
@@ -186,10 +171,7 @@ export const substitutes = [
         priceTextEn: 'approx. 10-25€ / kg',
         affiliateLink: 'https://www.amazon.de/s?k=honig+regional+bio',
         amazonRating: 4.8,
-        amazonReviews: 9234,
-        redFlags: ["Vollwertiger Zucker (GI 55)", "Hoher Insulinbedarf", "Kariesgefahr"],
-        redFlagsEn: ["Standard sugar (GI 55)", "High insulin demand", "Causes tooth decay"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 40, 95, 70, 20] }
+        amazonReviews: 9234
     },
     {
         id: 'yacon',
@@ -247,10 +229,7 @@ export const substitutes = [
         priceTextEn: 'approx. 40-70€ / kg (pure)',
         affiliateLink: 'https://www.amazon.de/s?k=moenchsfrucht+kaufen',
         amazonRating: 4.5,
-        amazonReviews: 2981,
-        redFlags: ["In der EU meist nur als Mischung erhältlich", "Relativ teuer"],
-        redFlagsEn: ["Mostly available as a blend in the EU", "Relatively expensive"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 5, 5, 5, 5] }
+        amazonReviews: 2981
     },
     {
         id: 'sucralose',
@@ -279,10 +258,7 @@ export const substitutes = [
         priceTextEn: 'approx. 3-6€ / 100g',
         affiliateLink: 'https://www.amazon.de/s?k=sucralose+tropfen',
         amazonRating: 4.6,
-        amazonReviews: 8320,
-        redFlags: ["Nicht zum Backen über 120°C geeignet", "Geschmacklich teils künstlich"],
-        redFlagsEn: ["Not suitable for baking above 120°C", "Taste can be perceived as artificial"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 5, 5, 5, 5] }
+        amazonReviews: 8320
     },
     {
         id: 'aspartam',
@@ -311,10 +287,7 @@ export const substitutes = [
         priceTextEn: 'approx. 3-5€ / 100g',
         affiliateLink: 'https://www.amazon.de/s?k=aspartam+suessstoff',
         amazonRating: 4.2,
-        amazonReviews: 4122,
-        redFlags: ["Nicht erhitzen (verliert Süße)", "Nicht bei PKU geeignet", "Künstlicher Süßstoff"],
-        redFlagsEn: ["Do not heat (loses sweetness)", "Not suitable for PKU", "Artificial sweetener"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 5, 5, 5, 5] }
+        amazonReviews: 4122
     },
     {
         id: 'saccharin',
@@ -426,10 +399,7 @@ export const substitutes = [
         priceTextEn: 'approx. 10-15€ / kg',
         affiliateLink: 'https://www.amazon.de/s?k=maltit+zuckeraustauschstoff',
         amazonRating: 4.6,
-        amazonReviews: 5402,
-        redFlags: ["Massiver Blutzuckeranstieg (GI 35-50)", "Stark abführend bei kleinen Mengen", "Kann Heißhunger triggern"],
-        redFlagsEn: ["Significant blood sugar spike (GI 35-50)", "Strong laxative even in small amounts", "May trigger sweet cravings"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 50, 75, 55, 25] }
+        amazonReviews: 5402
     },
     {
         id: 'dattelsirup',
@@ -457,10 +427,7 @@ export const substitutes = [
         priceTextEn: 'approx. 10-20€ / Liter',
         affiliateLink: 'https://www.amazon.de/s?k=dattelsirup+bio',
         amazonRating: 4.7,
-        amazonReviews: 4210,
-        redFlags: ["Hoher GI (47)", "Sehr kalorienreich", "Wie flüssiger Zucker"],
-        redFlagsEn: ["High GI (47)", "Very high in calories", "Like liquid sugar"],
-        simulation: { sugar: [5, 40, 95, 70, 20], substitute: [5, 65, 85, 60, 30] }
+        amazonReviews: 4210
     },
     {
         id: 'ahornsirup',

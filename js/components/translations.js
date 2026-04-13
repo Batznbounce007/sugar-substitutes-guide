@@ -95,33 +95,7 @@ export const translations = {
         'quiz.btn.show_results': 'Ergebnisse anzeigen',
         'quiz.btn.restart': 'Quiz neu starten',
         'quiz.results.title': 'Deine besten Matches',
-        'quiz.results.top_match': 'Top Match',
-
-        // New Detail Sections
-        'detail.red_flags': 'Red Flags (Vorsicht)',
-        'detail.simulation': 'Blutzucker-Simulation',
-        'detail.simulation_text': 'Vergleich: 1 TL Haushaltszucker vs. 1 TL dieses Süßstoffs.',
-        'detail.insulin_need': 'Insulinbedarf',
-        'detail.low': 'Gering',
-        'detail.high': 'Hoch',
-        'detail.no_impact': 'Kein Einfluss',
-
-        // Tolerability
-        'detail.tolerability': 'Verträglichkeit & Nebenwirkungen',
-        'detail.side_effects': 'Mögliche Begleiterscheinungen',
-        'tolerability.bloating': 'Blähungen (bei empfindlichem Magen)',
-        'tolerability.laxative': 'Abführende Wirkung bei Übermaß',
-        'tolerability.cravings': 'Kann Heißhunger triggern',
-
-        // ELID Specifics
-        'elid.be_count': 'Berechnung (BE/KE)',
-        'elid.t1_tip': 'Typ 1 Profi-Tipp: Da der GI 0 ist, benötigst du keinen Mahlzeiten-Bolus. Achte aber auf die Menge bei Backrezepten.',
-        'elid.t2_tip': 'Typ 2 Fokus: Hilft bei der Gewichtsreduktion und entlastet die Bauchspeicheldrüse (kein Insulin-Peak).',
-        'elid.beginner_title': 'Für Neudiabetiker',
-        'elid.advanced_title': 'Für Profis (Loop & ICT)',
-        'elid.beginner_text': 'Warum der GI wichtig ist? Er sagt dir, wie schnell dein Blutzucker Achterbahn fährt.',
-        'elid.advanced_text': 'Achtung bei Loop-Systemen: Da keine Glukose ankommt, kann der Algorithmus die Basalrate senken, wenn du zuvor Sport getrieben hast.',
-        'elid.time_in_range': 'Time in Range Optimierung',
+        'quiz.results.top_match': 'Top Match'
     },
     en: {
         // General
@@ -216,33 +190,7 @@ export const translations = {
         'quiz.btn.show_results': 'Show Results',
         'quiz.btn.restart': 'Restart Quiz',
         'quiz.results.title': 'Your Best Matches',
-        'quiz.results.top_match': 'Top Match',
-
-        // New Detail Sections
-        'detail.red_flags': 'Red Flags (Warning)',
-        'detail.simulation': 'Blood Sugar Simulation',
-        'detail.simulation_text': 'Comparison: 1 tsp Table Sugar vs. 1 tsp of this sweetener.',
-        'detail.insulin_need': 'Insulin Demand',
-        'detail.low': 'Low',
-        'detail.high': 'High',
-        'detail.no_impact': 'No Impact',
-
-        // Tolerability
-        'detail.tolerability': 'Tolerability & Side Effects',
-        'detail.side_effects': 'Possible Side Effects',
-        'tolerability.bloating': 'Bloating (for sensitive stomachs)',
-        'tolerability.laxative': 'Laxative effect in excess',
-        'tolerability.cravings': 'Can trigger cravings',
-
-        // ELID Specifics
-        'elid.be_count': 'Carb Count (BE/KE)',
-        'elid.t1_tip': 'Type 1 Pro-Tip: Since GI is 0, no meal bolus is required. But watch the total bulk in baking recipes.',
-        'elid.t2_tip': 'Type 2 Focus: Supports weight loss and reduces strain on the pancreas (no insulin peak).',
-        'elid.beginner_title': 'For New Diabetics',
-        'elid.advanced_title': 'For Pros (Loop & ICT)',
-        'elid.beginner_text': 'Why GI matters? it tells you how fast your blood sugar goes on a rollercoaster ride.',
-        'elid.advanced_text': 'Note for Loopers: Since no glucose is coming in, the algorithm might lower basal if you exercised earlier.',
-        'elid.time_in_range': 'Time in Range Optimization',
+        'quiz.results.top_match': 'Top Match'
     }
 };
 
