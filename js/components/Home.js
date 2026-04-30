@@ -24,10 +24,10 @@ export async function renderHome(container) {
         <div class="animate-in pb-16">
             <!-- Hero Section -->
             <section class="bg-background pt-10 pb-6 px-4 flex flex-col items-center text-center">
-                <h1 class="font-serif text-5xl md:text-6xl lg:text-[64px] font-bold text-foreground mb-3 leading-tight max-w-4xl tracking-tight">
+                <h1 class="font-serif text-5xl md:text-6xl lg:text-[64px] font-bold text-foreground mb-3 leading-tight max-w-4xl tracking-tight animate-fade-in-up">
                     ${t('app.title')}
                 </h1>
-                <p class="text-lg text-muted-foreground max-w-2xl mb-8">
+                <p class="text-lg text-muted-foreground max-w-2xl mb-8 animate-fade-in-up delay-100">
                     ${t('app.subtitle')}
                 </p>
 
@@ -82,10 +82,11 @@ export async function renderHome(container) {
 }
 
 function renderExploreView() {
+    const filtersActive = activeCategory !== 'Alle' || activeGI !== 'Alle' || activeCalories !== 'Alle' || searchQuery !== '';
     return `
     <section class="container mx-auto max-w-7xl px-4 mt-4">
         <!-- Toolbar -->
-        <div class="flex flex-col lg:flex-row gap-4 py-4 mb-8 bg-white p-4 rounded-2xl shadow-sm border border-border/60">
+        <div class="flex flex-col lg:flex-row gap-4 py-4 mb-8 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-sm border border-border/60 sticky top-16 z-40">
             <div class="flex flex-wrap lg:flex-nowrap items-end gap-3 w-full lg:w-auto flex-1">
                 <!-- Category Filter -->
                 <div class="relative w-full sm:w-auto">
@@ -138,8 +139,13 @@ function renderExploreView() {
                 </div>
             </div>
 
-            <!-- Sort -->
+            <!-- Sort & Reset -->
             <div class="flex items-center gap-3 w-full lg:w-auto shrink-0 justify-end lg:border-l border-border/60 lg:pl-4">
+                ${filtersActive ? `
+                <button id="reset-filters" class="text-sm font-semibold text-muted-foreground hover:text-destructive flex items-center gap-1.5 transition-colors px-2">
+                    <i data-lucide="x-circle" class="w-4 h-4"></i> Reset
+                </button>
+                ` : ''}
                 <div class="relative w-full sm:w-auto">
                     <div class="flex items-center bg-white border border-border rounded-xl focus-within:ring-2 focus-within:ring-primary/20 focus-within:border-primary hover:bg-muted/10 transition-all cursor-pointer">
                         <label for="sort-select" class="pl-3 pr-1 py-1.5 text-muted-foreground cursor-pointer flex items-center justify-center pointer-events-none">
@@ -205,7 +211,10 @@ function renderQuizView() {
     return `
     <section class="container mx-auto max-w-2xl px-4 py-8">
         <div class="bg-white rounded-[32px] p-8 md:p-12 shadow-sm border border-border/60 text-center animate-in">
-            <span class="text-sm font-bold text-primary mb-4 block uppercase tracking-widest">${currentQuizStep} / 4</span>
+            <div class="w-full bg-muted/30 rounded-full h-2.5 mb-6 overflow-hidden">
+                <div class="bg-primary h-2.5 rounded-full transition-all duration-500 ease-out" style="width: ${(currentQuizStep / 4) * 100}%"></div>
+            </div>
+            <span class="text-xs font-bold text-primary/60 mb-4 block uppercase tracking-widest">Frage ${currentQuizStep} von 4</span>
             <h2 class="font-serif text-3xl md:text-4xl font-bold text-foreground mb-10 leading-tight">${step.title}</h2>
             
             <div class="grid gap-4">
@@ -239,6 +248,19 @@ function renderQuizResults() {
 }
 
 function attachExploreListeners(container) {
+    const resetFilters = () => {
+        activeCategory = 'Alle';
+        activeGI = 'Alle';
+        activeCalories = 'Alle';
+        searchQuery = '';
+        renderHome(container);
+    };
+
+    const resetBtn = document.getElementById('reset-filters');
+    if (resetBtn) resetBtn.addEventListener('click', resetFilters);
+
+    window.resetExploreFilters = resetFilters;
+
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
@@ -381,9 +403,12 @@ function renderGridInner(grid, items) {
     grid.innerHTML = '';
 
     if (items.length === 0) {
-        grid.innerHTML = `<div class="col-span-full py-16 text-center text-muted-foreground border-2 border-dashed border-border rounded-xl bg-white/50">
+        grid.innerHTML = `<div class="col-span-full py-16 text-center text-muted-foreground border-2 border-dashed border-border rounded-xl bg-white/50 animate-fade-in-up">
             <i data-lucide="search-x" class="mx-auto h-8 w-8 mb-3 opacity-50"></i>
-            <p>${t('card.no_results')}</p>
+            <p class="mb-4">${t('card.no_results')}</p>
+            <button onclick="window.resetExploreFilters && window.resetExploreFilters()" class="inline-flex items-center gap-2 bg-white border border-border hover:border-primary hover:text-primary transition-all font-semibold py-2 px-4 rounded-xl text-sm shadow-sm">
+                <i data-lucide="refresh-cw" class="w-4 h-4"></i> Filter zurücksetzen
+            </button>
         </div>`;
         if (window.lucide) window.lucide.createIcons();
         return;
@@ -436,7 +461,10 @@ function renderGridInner(grid, items) {
                         <span class="text-[10px] text-muted-foreground tracking-wide mt-1">${t('card.sweetness')}</span>
                     </div>
                     <div class="bg-muted/10 rounded-xl p-3 text-center flex flex-col justify-center border border-transparent hover:border-primary/20 transition-colors">
-                        <span class="font-bold text-[12px] leading-tight ${item.bloodSugarImpact === 'Niedrig' || bloodSugarImpact === 'Low' ? 'text-primary' : 'text-foreground'}">${bloodSugarImpact}</span>
+                        <span class="font-bold text-[14px] leading-tight ${
+                            item.bloodSugarImpact === 'Niedrig' || bloodSugarImpact === 'Low' ? 'text-primary' : 
+                            (item.bloodSugarImpact === 'Mittel' || bloodSugarImpact === 'Medium' ? 'text-orange-500' : 'text-red-500')
+                        }">${bloodSugarImpact}</span>
                         <span class="text-[10px] text-muted-foreground tracking-wide mt-1">${t('card.blood_sugar')}</span>
                     </div>
                 </div>

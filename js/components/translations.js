@@ -5,12 +5,12 @@ export const translations = {
     de: {
         // General
         'app.title': 'Süßes Leben mit Diabetes.<br/>Dein Zuckerersatz-Kompass.',
-        'app.subtitle': 'Für Diabetiker (Typ 1 & 2): Vergleiche Süßungsmittel nach glykämischem Index,<br/>Kalorien und Insulinbedarf. Finde deine beste Option.',
+        'app.subtitle': 'Vergleiche Süßungsmittel nach glykämischem Index,<br/>Kalorien und Insulinbedarf. Finde deine beste Option.',
         'app.search_placeholder': 'Süßungsmittel suchen (z.B. Erythrit, Stevia)...',
 
         // Navigation
         'nav.home': 'Startseite',
-        'nav.about': 'Über uns',
+        'nav.about': 'Mission',
         'nav.guide': 'Ratgeber',
         'nav.impressum': 'Impressum',
         'nav.privacy': 'Datenschutz',
@@ -33,9 +33,9 @@ export const translations = {
         'filter.baking.all': 'Alle',
         'filter.baking.good': 'Gut geeignet',
         'filter.calories.all': 'Alle',
-        'filter.calories.low': 'Sehr wenig – 0 bis 50 kcal',
-        'filter.calories.mid': 'Moderat – 50 bis 200 kcal',
-        'filter.calories.high': 'Hoch – über 200 kcal',
+        'filter.calories.low': 'Sehr wenig - 0 bis 50 kcal',
+        'filter.calories.mid': 'Moderat - 50 bis 200 kcal',
+        'filter.calories.high': 'Hoch - über 200 kcal',
         'filter.gi.all': 'Alle',
         'filter.gi.zero': 'Keine',
         'filter.gi.low': 'Niedrig',
@@ -64,9 +64,9 @@ export const translations = {
         'detail.nutrition': 'Nährwerte',
         'detail.price': 'Preis (ca.)',
         'detail.buy_title': 'Interesse geweckt?',
-        'detail.buy_text': 'Direkt online bestellen – geprüfte Produkte für Diabetiker.',
+        'detail.buy_text': 'Direkt online bestellen - geprüfte Produkte für Diabetiker.',
         'detail.buy_btn': 'Jetzt auf Amazon ansehen',
-        'detail.affiliate': '* Affiliate-Link – für dich ohne Mehrkosten',
+        'detail.affiliate': '* Affiliate-Link - für dich ohne Mehrkosten',
 
         // Footer
         // Footer
@@ -105,6 +105,16 @@ export const translations = {
         'detail.low': 'Gering',
         'detail.high': 'Hoch',
         'detail.no_impact': 'Kein Einfluss',
+        'detail.suitable_for': 'Optimal geeignet für',
+        'detail.unsuitable_for': 'Eher ungeeignet für',
+        'detail.medical_assessment': 'Medizinische Einschätzung & Grenzwerte',
+        'detail.adi': 'Grenzwerte (ADI)',
+        'detail.cancer_risk': 'Krebsrisiken & Studien',
+        'detail.summary': 'Wissenschaftliches Fazit',
+        'detail.digestion_taste': 'Verdauung & Geschmacksprofil',
+        'detail.digestion': 'Darm & Verträglichkeit',
+        'detail.taste': 'Süßeprofil',
+        'detail.sources': 'Referenzierte Quellen',
 
         // Tolerability
         'detail.tolerability': 'Verträglichkeit & Nebenwirkungen',
@@ -116,12 +126,12 @@ export const translations = {
     en: {
         // General
         'app.title': 'Sweet life with diabetes.<br/>Your guide to sugar alternatives.',
-        'app.subtitle': 'For Type 1 and Type 2 diabetics: Compare sweeteners by glycemic index,<br/>calories and insulin impact. Find the best option for you.',
+        'app.subtitle': 'Compare sweeteners by glycemic index,<br/>calories and insulin impact. Find the best option for you.',
         'app.search_placeholder': 'Search sweeteners (e.g. Erythritol, Stevia)...',
 
         // Navigation
         'nav.home': 'Home',
-        'nav.about': 'About Us',
+        'nav.about': 'Mission',
         'nav.guide': 'Guide',
         'nav.impressum': 'Imprint',
         'nav.privacy': 'Privacy',
@@ -144,9 +154,9 @@ export const translations = {
         'filter.baking.all': 'All',
         'filter.baking.good': 'Suitable',
         'filter.calories.all': 'All',
-        'filter.calories.low': 'Very low – 0 to 50 kcal',
-        'filter.calories.mid': 'Moderate – 50 to 200 kcal',
-        'filter.calories.high': 'High – over 200 kcal',
+        'filter.calories.low': 'Very low - 0 to 50 kcal',
+        'filter.calories.mid': 'Moderate - 50 to 200 kcal',
+        'filter.calories.high': 'High - over 200 kcal',
         'filter.gi.all': 'All',
         'filter.gi.zero': 'None',
         'filter.gi.low': 'Low',
@@ -175,9 +185,9 @@ export const translations = {
         'detail.nutrition': 'Nutrition Values',
         'detail.price': 'Price (approx.)',
         'detail.buy_title': 'Interested?',
-        'detail.buy_text': 'Order directly online – vetted products for diabetics.',
+        'detail.buy_text': 'Order directly online - vetted products for diabetics.',
         'detail.buy_btn': 'View on Amazon',
-        'detail.affiliate': '* Affiliate link – no extra cost for you',
+        'detail.affiliate': '* Affiliate link - no extra cost for you',
 
         // Footer
         // Footer
@@ -216,6 +226,16 @@ export const translations = {
         'detail.low': 'Low',
         'detail.high': 'High',
         'detail.no_impact': 'No Impact',
+        'detail.suitable_for': 'Best suited for',
+        'detail.unsuitable_for': 'Less suitable for',
+        'detail.medical_assessment': 'Medical Assessment & Limits',
+        'detail.adi': 'Limits (ADI)',
+        'detail.cancer_risk': 'Cancer Risks & Studies',
+        'detail.summary': 'Scientific Summary',
+        'detail.digestion_taste': 'Digestion & Taste Profile',
+        'detail.digestion': 'Gut & Tolerability',
+        'detail.taste': 'Sweetness Profile',
+        'detail.sources': 'Referenced Sources',
 
         // Tolerability
         'detail.tolerability': 'Tolerability & Side Effects',

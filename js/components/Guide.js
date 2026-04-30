@@ -17,7 +17,7 @@ export async function renderGuide(container) {
                         Your Trusted Guide to<br/>Safe Sweetening
                     </h1>
                     <p class="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                        Whether you are managing your own blood sugar, caring for an older relative, or looking out for your kids – we break down exactly what you need to know, without the overwhelming jargon.
+                        Whether you are managing your own blood sugar, caring for an older relative, or looking out for your kids - we break down exactly what you need to know, without the overwhelming jargon.
                     </p>
                 </div>
             </section>
@@ -75,7 +75,7 @@ export async function renderGuide(container) {
                         <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
                             <i data-lucide="activity" class="w-6 h-6"></i>
                         </div>
-                        <h2 class="font-serif text-2xl font-bold text-foreground">The Glycemic Index (GI) – The Key Metric</h2>
+                        <h2 class="font-serif text-2xl font-bold text-foreground">The Glycemic Index (GI) - The Key Metric</h2>
                     </div>
                     <div class="space-y-4 text-[17px] text-foreground/80">
                         <p>
@@ -167,7 +167,7 @@ export async function renderGuide(container) {
                             </h3>
                             <p class="text-sm border-b border-border/50 pb-3 mb-3 text-muted-foreground">Erythritol, Xylitol, Maltitol</p>
                             <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                <strong>The Everyday Heroes:</strong> Look and bake almost exactly like real sugar. Erythritol is our top recommendation here – zero calories, zero blood sugar impact, and completely tooth-friendly. Perfect for diabetics and kids alike.
+                                <strong>The Everyday Heroes:</strong> Look and bake almost exactly like real sugar. Erythritol is our top recommendation here - zero calories, zero blood sugar impact, and completely tooth-friendly. Perfect for diabetics and kids alike.
                             </p>
                         </div>
 
@@ -213,11 +213,11 @@ export async function renderGuide(container) {
                         <h2 class="font-serif text-xl font-bold text-red-700">Common Traps for Diabetics</h2>
                     </div>
                     <ul class="space-y-3 text-[15px] text-foreground/80">
-                        <li class="flex gap-3"><span>⚠️</span><span><strong>"Sugar-free" chocolate</strong> often contains Maltitol (GI=35) – this raises blood sugar!</span></li>
-                        <li class="flex gap-3"><span>⚠️</span><span><strong>Agave syrup</strong> – low GI but very high fructose content → burdens the liver.</span></li>
-                        <li class="flex gap-3"><span>⚠️</span><span><strong>Coconut sugar</strong> – "natural" but GI=35. Must be calculated like sugar.</span></li>
+                        <li class="flex gap-3"><span>⚠️</span><span><strong>"Sugar-free" chocolate</strong> often contains Maltitol (GI=35) - this raises blood sugar!</span></li>
+                        <li class="flex gap-3"><span>⚠️</span><span><strong>Agave syrup</strong> - low GI but very high fructose content → burdens the liver.</span></li>
+                        <li class="flex gap-3"><span>⚠️</span><span><strong>Coconut sugar</strong> - "natural" but GI=35. Must be calculated like sugar.</span></li>
                         <li class="flex gap-3"><span>⚠️</span><span><strong>Large amounts of Xylitol or Sorbitol</strong> can cause bloating and diarrhea.</span></li>
-                        <li class="flex gap-3"><span>⚠️</span><span><strong>Xylitol is highly toxic to dogs</strong> – keep it out of their reach!</span></li>
+                        <li class="flex gap-3"><span>⚠️</span><span><strong>Xylitol is highly toxic to dogs</strong> - keep it out of their reach!</span></li>
                     </ul>
                 </section>
 
@@ -352,7 +352,7 @@ export async function renderGuide(container) {
                         <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
                             <i data-lucide="activity" class="w-6 h-6"></i>
                         </div>
-                        <h2 class="font-serif text-2xl font-bold text-foreground">Der Glykämische Index (GI) – Die wichtigste Kennzahl</h2>
+                        <h2 class="font-serif text-2xl font-bold text-foreground">Der Glykämische Index (GI) - Die wichtigste Kennzahl</h2>
                     </div>
                     <div class="space-y-4 text-[17px] text-foreground/80">
                         <p>
