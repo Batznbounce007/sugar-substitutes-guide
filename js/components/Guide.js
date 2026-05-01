@@ -33,36 +33,45 @@ export async function renderGuide(container) {
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <!-- Profile 1: Parents -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 mb-6">
-                                <i data-lucide="baby" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=600&auto=format&fit=crop" alt="For Parents" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Parents</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Your child has diabetes and you want them to enjoy treats without feeling restricted. Learn which alternatives keep your child's blood sugar stable and don't require insulin.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Parents</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Your child has diabetes and you want them to enjoy treats without feeling restricted. Learn which alternatives keep your child's blood sugar stable and don't require insulin.
+                                </p>
+                            </div>
                         </div>
 
                         <!-- Profile 2: Caregivers -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
-                                <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=600&auto=format&fit=crop" alt="For Relatives" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Relatives</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Helping older parents manage their Type 2 diabetes can be stressful. Discover easy 1:1 sugar replacements so they can still enjoy their afternoon cake without the blood sugar spike.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">For Relatives</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Helping older parents manage their Type 2 diabetes can be stressful. Discover easy 1:1 sugar replacements so they can still enjoy their afternoon cake without the blood sugar spike.
+                                </p>
+                            </div>
                         </div>
 
                         <!-- Profile 3: Individuals -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-                                <i data-lucide="user-check" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?q=80&w=600&auto=format&fit=crop" alt="For You" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">For You</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Cut through the marketing noise online. Gain absolute clarity on what impacts your blood sugar, what requires insulin, and what you can enjoy completely freely.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">For You</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Cut through the marketing noise online. Gain absolute clarity on what impacts your blood sugar, what requires insulin, and what you can enjoy completely freely.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -307,36 +316,45 @@ export async function renderGuide(container) {
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <!-- Profile 1: Parents -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 mb-6">
-                                <i data-lucide="baby" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=600&auto=format&fit=crop" alt="Für Eltern" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Eltern</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Dein Kind hat Diabetes und du möchtest trotzdem unbeschwerte Momente beim Kuchenessen und Naschen ermöglichen. Erfahre, welche Alternativen den Blutzuckerspiegel deines Kindes nicht belasten und kein Insulin erfordern.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Eltern</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Dein Kind hat Diabetes und du möchtest trotzdem unbeschwerte Momente beim Kuchenessen und Naschen ermöglichen. Erfahre, welche Alternativen den Blutzuckerspiegel deines Kindes nicht belasten und kein Insulin erfordern.
+                                </p>
+                            </div>
                         </div>
 
                         <!-- Profile 2: Caregivers -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
-                                <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=600&auto=format&fit=crop" alt="Für Angehörige" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Angehörige</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Älteren Eltern bei Typ-2-Diabetes zu helfen, kann stressig sein. Entdecke einfache 1:1-Zuckerersatzstoffe, damit sie ihren Nachmittagskuchen weiterhin ohne Blutzuckerspitzen genießen können.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Angehörige</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Älteren Eltern bei Typ-2-Diabetes zu helfen, kann stressig sein. Entdecke einfache 1:1-Zuckerersatzstoffe, damit sie ihren Nachmittagskuchen weiterhin ohne Blutzuckerspitzen genießen können.
+                                </p>
+                            </div>
                         </div>
 
                         <!-- Profile 3: Individuals -->
-                        <div class="bg-white rounded-3xl p-8 border border-border shadow-sm hover:shadow-md transition-all">
-                            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mb-6">
-                                <i data-lucide="user-check" class="w-7 h-7"></i>
+                        <div class="bg-white rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all flex flex-col">
+                            <div class="w-full h-48 bg-gray-100 relative">
+                                <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?q=80&w=600&auto=format&fit=crop" alt="Für Dich" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
-                            <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Dich</h3>
-                            <p class="text-[15px] text-foreground/80 leading-relaxed">
-                                Durchblicke das Marketing-Chaos im Netz. Bekomme absolute Klarheit darüber, was deinen Blutzucker beeinflusst, wofür du Insulin brauchst und was du völlig frei genießen kannst.
-                            </p>
+                            <div class="p-8 flex-1">
+                                <h3 class="font-serif text-xl font-bold text-foreground mb-3">Für Dich</h3>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Durchblicke das Marketing-Chaos im Netz. Bekomme absolute Klarheit darüber, was deinen Blutzucker beeinflusst, wofür du Insulin brauchst und was du völlig frei genießen kannst.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
