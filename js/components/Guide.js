@@ -71,10 +71,7 @@ export async function renderGuide(container) {
 
                 <!-- GI Section -->
                 <section class="bg-white rounded-3xl p-8 border border-border shadow-sm">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
-                            <i data-lucide="activity" class="w-6 h-6"></i>
-                        </div>
+                    <div class="mb-6">
                         <h2 class="font-serif text-2xl font-bold text-foreground">The Glycemic Index (GI) - The Key Metric</h2>
                     </div>
                     <div class="space-y-4 text-[17px] text-foreground/80">
@@ -348,10 +345,7 @@ export async function renderGuide(container) {
 
                 <!-- GI Section -->
                 <section class="bg-white rounded-3xl p-8 border border-border shadow-sm">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
-                            <i data-lucide="activity" class="w-6 h-6"></i>
-                        </div>
+                    <div class="mb-6">
                         <h2 class="font-serif text-2xl font-bold text-foreground">Der Glykämische Index (GI) - Die wichtigste Kennzahl</h2>
                     </div>
                     <div class="space-y-4 text-[17px] text-foreground/80">
