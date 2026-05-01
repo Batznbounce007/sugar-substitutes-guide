@@ -32,7 +32,7 @@ export async function renderAbout(container) {
                 <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
                 <!-- Image Column -->
-                <div class="w-full md:w-[35%] shrink-0 flex flex-col items-center md:items-start z-10">
+                <div class="w-full md:w-[35%] shrink-0 flex flex-col items-center md:items-start z-10 md:sticky md:top-32">
                     <div class="relative w-full aspect-[4/5] mb-6">
                         <img src="assets/images/founder.png" alt="${isEn ? 'Founder of DiaSweet' : 'Gründer von DiaSweet'}" class="w-full h-full rounded-[24px] shadow-md border border-border/40 object-cover" />
                         <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-2xl shadow-lg border border-border/40 flex items-center justify-center">
