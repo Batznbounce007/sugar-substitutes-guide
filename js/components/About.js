@@ -112,9 +112,7 @@ export async function renderAbout(container) {
             
             <!-- Transparency / Financing Section -->
             <section class="bg-[#F8F7F4] rounded-[32px] p-8 md:p-10 border border-border/40 text-center max-w-4xl mx-auto mt-6">
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-foreground mx-auto mb-5 shadow-sm border border-border/40">
-                    <i data-lucide="info" class="w-5 h-5"></i>
-                </div>
+
                 <h2 class="font-serif text-2xl font-bold text-foreground mb-4">${isEn ? 'A word on financing & transparency' : 'Ein Wort zur Finanzierung & Transparenz'}</h2>
                 <p class="text-[15px] text-foreground/70 max-w-2xl mx-auto leading-relaxed mb-6">
                     ${isEn 
