@@ -74,7 +74,7 @@ export const translations = {
 
         // Quiz & Tabs
         'tab.explore': 'Alle Entdecken',
-        'tab.quiz': 'Berater-Quiz',
+        'tab.quiz': 'Kompass',
         'quiz.title': 'Finde deinen Match',
         'quiz.subtitle': 'Beantworte 4 kurze Fragen und wir zeigen dir die besten Alternativen für dich.',
         'quiz.q1.title': '1. Dein Diabetes-Typ?',
@@ -195,7 +195,7 @@ export const translations = {
 
         // Quiz & Tabs
         'tab.explore': 'Explore All',
-        'tab.quiz': 'Advisor Quiz',
+        'tab.quiz': 'Compass',
         'quiz.title': 'Find your Match',
         'quiz.subtitle': 'Answer 4 quick questions and we will show you the best alternatives for you.',
         'quiz.q1.title': '1. Your Diabetes Type?',
