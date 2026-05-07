@@ -426,7 +426,7 @@ function renderGridInner(grid, items) {
 
         card.innerHTML = `
             <div class="h-44 bg-[#F8F7F4] flex items-center justify-center relative ${item.newImage ? 'p-0' : 'p-4'} cursor-pointer" data-route="detail" data-id="${item.id}">
-                ${index === 0 && quizResults ? `<span class="absolute top-4 left-4 z-20 bg-primary text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg border border-white/20 uppercase tracking-tighter animate-pulse">${t('quiz.results.top_match')}</span>` : ''}
+                ${''}
                 <div class="absolute top-4 right-4 z-10">
                     <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold bg-white/90 backdrop-blur-sm text-foreground shadow-sm uppercase tracking-wider">
                         ${category}
