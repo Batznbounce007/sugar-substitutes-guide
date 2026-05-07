@@ -91,65 +91,69 @@ export async function renderGuide(container) {
                         <p class="font-medium text-primary mt-4">What the GI means for your insulin management:</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                             <!-- Card 1 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">0</span>
+                            <div class="flex flex-col h-full bg-emerald-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-emerald-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-emerald-900">0</span>
+                                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="check" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Optimal</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">e.g. Erythritol</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Erythritol</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">No blood sugar effect.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Type 1: No bolus needed</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Type 2: Completely safe</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">No blood sugar effect.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Type 1: No bolus needed</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Type 2: Completely safe</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 2 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">1-34</span>
+                            <div class="flex flex-col h-full bg-amber-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-amber-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-amber-900">1-34</span>
+                                    <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i data-lucide="minus" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Low</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">e.g. Xylitol</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Xylitol</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Very slow, minimal rise.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Type 1: Check in small amounts</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Type 2: Moderate amounts ok</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Very slow, minimal rise.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Type 1: Check in small amounts</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Type 2: Moderate amounts ok</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 3 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">35-54</span>
+                            <div class="flex flex-col h-full bg-orange-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-orange-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-orange-900">35-54</span>
+                                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600"><i data-lucide="alert-circle" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Medium</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">e.g. Maltitol</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Maltitol</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Measurable spike.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Treat like regular carbs</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Both types must monitor</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Measurable spike.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Treat like regular carbs</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Both types must monitor</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 4 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">55+</span>
+                            <div class="flex flex-col h-full bg-red-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-red-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-red-900">55+</span>
+                                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600"><i data-lucide="x" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">High</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">e.g. Honey</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Honey</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">High and fast spike.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Reacts identical to sugar</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Avoid if possible</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">High and fast spike.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Reacts identical to sugar</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Avoid if possible</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -230,31 +234,52 @@ export async function renderGuide(container) {
                     <h2 class="font-serif text-3xl font-bold text-foreground mb-8 text-center">Common Myths and Misconceptions</h2>
                     <div class="space-y-4 max-w-3xl mx-auto">
                         <!-- Myth 1 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Myth: Agave nectar is healthy for diabetics.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fact:</strong> False. While agave has a lower GI than sugar, it consists almost entirely of fructose. In high amounts, isolated fructose overloads the liver and can actually worsen insulin resistance (Type 2).
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Myth</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    Agave nectar is healthy for diabetics.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fact</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    False. While agave has a lower GI than sugar, it consists almost entirely of fructose. In high amounts, isolated fructose overloads the liver and can actually worsen insulin resistance (Type 2).
+                                </p>
+                            </div>
                         </div>
                         <!-- Myth 2 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Myth: "No Added Sugar" means I can safely eat it.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fact:</strong> Be careful! Such products often contain natural sugars (from dates, raisins) or sugar alcohols like Maltitol, which still cause significant blood sugar spikes and require insulin bolusing.
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Myth</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    "No Added Sugar" means I can safely eat it.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fact</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Be careful! Such products often contain natural sugars (from dates, raisins) or sugar alcohols like Maltitol, which still cause significant blood sugar spikes and require insulin bolusing.
+                                </p>
+                            </div>
                         </div>
                         <!-- Myth 3 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Myth: Artificial sweeteners trick the body into releasing insulin.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fact:</strong> This is a common myth (Cephalic Phase Insulin Response) that has been scientifically debunked in humans. Without carbohydrates, sweeteners like Erythritol or Sucralose do not trigger insulin release.
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Myth</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    Artificial sweeteners trick the body into releasing insulin.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fact</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    This is a common myth (Cephalic Phase Insulin Response) that has been scientifically debunked in humans. Without carbohydrates, sweeteners like Erythritol or Sucralose do not trigger insulin release.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -350,65 +375,69 @@ export async function renderGuide(container) {
                         <p class="font-medium text-primary mt-4">Was der GI für dein Insulinmanagement bedeutet:</p>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                             <!-- Card 1 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">0</span>
+                            <div class="flex flex-col h-full bg-emerald-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-emerald-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-emerald-900">0</span>
+                                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="check" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Optimal</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">z.B. Erythrit</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Erythrit</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Keinerlei Auswirkung auf den Blutzucker.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Typ 1: Kein Bolus nötig</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Typ 2: Völlig unbedenklich</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Keinerlei Auswirkung auf den Blutzucker.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Typ 1: Kein Bolus nötig</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Typ 2: Völlig unbedenklich</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 2 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">1-34</span>
+                            <div class="flex flex-col h-full bg-amber-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-amber-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-amber-900">1-34</span>
+                                    <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i data-lucide="minus" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Niedrig</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">z.B. Xylit</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Xylit</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Sehr langsamer, minimaler Anstieg.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Typ 1: In kleinen Mengen</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Typ 2: Moderater Konsum ok</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Sehr langsamer, minimaler Anstieg.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Typ 1: In kleinen Mengen</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Typ 2: Moderater Konsum ok</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 3 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">35-54</span>
+                            <div class="flex flex-col h-full bg-orange-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-orange-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-orange-900">35-54</span>
+                                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600"><i data-lucide="alert-circle" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Mittel</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">z.B. Maltit</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Maltit</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Messbarer Blutzuckeranstieg.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Wie normale Kohlenhydrate</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Beide Typen müssen aufpassen</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Messbarer Blutzuckeranstieg.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Wie normale Kohlenhydrate</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Beide Typen müssen aufpassen</span></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <!-- Card 4 -->
-                            <div class="flex flex-col h-full bg-white rounded-2xl p-6 border border-border/60 hover:border-border transition-colors">
-                                <div class="mb-4">
-                                    <span class="text-3xl font-serif font-bold text-foreground">55+</span>
+                            <div class="flex flex-col h-full bg-red-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-red-400 hover:shadow-sm transition-all">
+                                <div class="mb-4 flex items-center justify-between">
+                                    <span class="text-3xl font-serif font-bold text-red-900">55+</span>
+                                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600"><i data-lucide="x" class="w-4 h-4"></i></div>
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Hoch</h3>
-                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/40 pb-4">z.B. Honig</p>
+                                <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Honig</p>
                                 <div class="flex-grow">
-                                    <p class="text-[14px] text-foreground/70 leading-relaxed mb-3">Starker und schneller Anstieg.</p>
-                                    <ul class="text-[14px] text-foreground/80 space-y-1">
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Analoge Wirkung wie Zucker</li>
-                                        <li class="flex gap-2"><span class="text-muted-foreground">-</span>Keine sichere Diabetiker-Option</li>
+                                    <p class="text-[14px] text-foreground/80 leading-relaxed mb-4">Starker und schneller Anstieg.</p>
+                                    <ul class="text-[14px] text-foreground/80 space-y-2">
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Analoge Wirkung wie Zucker</span></li>
+                                        <li class="flex gap-2 items-start"><i data-lucide="minus" class="w-4 h-4 mt-0.5 text-muted-foreground/50 shrink-0"></i> <span>Keine sichere Diabetiker-Option</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -474,31 +503,52 @@ export async function renderGuide(container) {
                     <h2 class="font-serif text-3xl font-bold text-foreground mb-8 text-center">Häufige Mythen und Missverständnisse</h2>
                     <div class="space-y-4 max-w-3xl mx-auto">
                         <!-- Myth 1 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Mythos: Agavendicksaft ist gesund für Diabetiker.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fakt:</strong> Falsch. Agavendicksaft hat zwar einen niedrigeren GI als Zucker, besteht aber fast nur aus Fruktose. In großen Mengen kann isolierte Fruktose die Leber belasten und eine Insulinresistenz (Typ 2) sogar verschlechtern.
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Mythos</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    Agavendicksaft ist gesund für Diabetiker.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fakt</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Falsch. Agavendicksaft hat zwar einen niedrigeren GI als Zucker, besteht aber fast nur aus Fruktose. In großen Mengen kann isolierte Fruktose die Leber belasten und eine Insulinresistenz (Typ 2) sogar verschlechtern.
+                                </p>
+                            </div>
                         </div>
                         <!-- Myth 2 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Mythos: "Ohne Zuckerzusatz" bedeutet, ich kann es bedenkenlos essen.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fakt:</strong> Vorsicht! Solche Produkte enthalten oft fruchteigene Zucker (aus Datteln, Rosinen) oder Zuckeralkohole wie Maltit, die den Blutzucker dennoch massiv ansteigen lassen und mit Insulin abgedeckt werden müssen.
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Mythos</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    "Ohne Zuckerzusatz" bedeutet, ich kann es bedenkenlos essen.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fakt</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Vorsicht! Solche Produkte enthalten oft fruchteigene Zucker (aus Datteln, Rosinen) oder Zuckeralkohole wie Maltit, die den Blutzucker dennoch massiv ansteigen lassen und mit Insulin abgedeckt werden müssen.
+                                </p>
+                            </div>
                         </div>
                         <!-- Myth 3 -->
-                        <div class="bg-white rounded-2xl p-6 border border-border/60">
-                            <h3 class="font-bold text-lg text-foreground mb-2">
-                                Mythos: Süßstoffe locken Insulin durch den süßen Geschmack.
-                            </h3>
-                            <p class="text-[15px] text-foreground/70 leading-relaxed">
-                                <strong class="text-foreground font-medium">Fakt:</strong> Das ist ein Irrtum (Kephalischer Insulinreflex), der in Studien für den Menschen widerlegt wurde. Süßstoffe wie Erythrit oder Sucralose triggern ohne Aufnahme von Kohlenhydraten keine Insulinausschüttung.
-                            </p>
+                        <div class="bg-white rounded-2xl p-6 border border-border/60 shadow-sm flex flex-col md:flex-row gap-6 relative overflow-hidden group hover:border-border transition-colors">
+                            <div class="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-primary/40 transition-colors"></div>
+                            <div class="md:w-1/3 flex-shrink-0">
+                                <div class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Mythos</div>
+                                <h3 class="font-serif font-bold text-lg text-foreground">
+                                    Süßstoffe locken Insulin durch den süßen Geschmack.
+                                </h3>
+                            </div>
+                            <div class="md:w-2/3 md:border-l border-border/40 md:pl-6">
+                                <div class="inline-block px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-md uppercase tracking-wider mb-2">Fakt</div>
+                                <p class="text-[15px] text-foreground/80 leading-relaxed">
+                                    Das ist ein Irrtum (Kephalischer Insulinreflex), der in Studien für den Menschen widerlegt wurde. Süßstoffe wie Erythrit oder Sucralose triggern ohne Aufnahme von Kohlenhydraten keine Insulinausschüttung.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
