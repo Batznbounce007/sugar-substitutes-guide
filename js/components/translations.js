@@ -48,7 +48,7 @@ export const translations = {
 
         // Cards & Details
         'card.gi': 'Glykäm. Index (GI)',
-        'card.kcal': 'kcal / 100g',
+        'card.kcal': 'kcal / 10g Süße',
         'card.sweetness': 'Süßkraft vs. Zucker',
         'card.blood_sugar': 'Blutzuckerwirkung',
         'card.details': 'Details',
@@ -167,9 +167,7 @@ export const translations = {
         'sort.kcal_asc': 'Calories',
         'sort.price_asc': 'Price',
 
-        // Cards & Details
-        'card.gi': 'Glycemic Index (GI)',
-        'card.kcal': 'kcal / 100g',
+        'card.kcal': 'kcal / 10g sweet',
         'card.sweetness': 'Sweetness vs Sugar',
         'card.blood_sugar': 'Blood Sugar Effect',
         'card.details': 'Details',

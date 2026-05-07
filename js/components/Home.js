@@ -186,8 +186,8 @@ function renderQuizView() {
         },
         {
             key: 'goal', title: t('quiz.q2.title'), options: [
-                { id: 'weight', label: t('quiz.q2.a1'), icon: 'trending-down' },
                 { id: 'stability', label: t('quiz.q2.a2'), icon: 'bar-chart-2' },
+                { id: 'weight', label: t('quiz.q2.a1'), icon: 'trending-down' },
                 { id: 'taste', label: t('quiz.q2.a3'), icon: 'utensils' }
             ]
         },
@@ -453,7 +453,7 @@ function renderGridInner(grid, items) {
                         <span class="text-[10px] text-muted-foreground tracking-wide mt-1">${t('card.gi')}</span>
                     </div>
                     <div class="bg-muted/10 rounded-xl p-3 text-center flex flex-col justify-center border border-transparent hover:border-primary/20 transition-colors">
-                        <span class="font-bold text-lg leading-tight">${item.calories}</span>
+                        <span class="font-bold text-lg leading-tight">${Math.round((item.calories / item.sweetness) / 10)}</span>
                         <span class="text-[10px] text-muted-foreground tracking-wide mt-1">${t('card.kcal')}</span>
                     </div>
                     <div class="bg-muted/10 rounded-xl p-3 text-center flex flex-col justify-center border border-transparent hover:border-primary/20 transition-colors">

@@ -58,7 +58,7 @@ export async function renderDetail(container, item) {
                     </div>
                     <!-- Kcal -->
                     <div class="flex-1 p-5 flex flex-col justify-center items-center text-center">
-                        <span class="text-3xl font-bold text-foreground mb-1">${item.calories}</span>
+                        <span class="text-3xl font-bold text-foreground mb-1">${Math.round((item.calories / item.sweetness) / 10)}</span>
                         <span class="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">${t('card.kcal')}</span>
                     </div>
                     <!-- Sweetness -->
