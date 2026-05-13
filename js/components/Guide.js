@@ -94,7 +94,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-emerald-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-emerald-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-emerald-900">0</span>
-                                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Optimal</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Erythritol</p>
@@ -111,7 +111,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-amber-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-amber-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-amber-900">1-34</span>
-                                    <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i data-lucide="minus" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Low</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Xylitol</p>
@@ -128,7 +128,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-orange-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-orange-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-orange-900">35-54</span>
-                                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600"><i data-lucide="alert-circle" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Medium</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Maltitol</p>
@@ -145,7 +145,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-red-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-red-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-red-900">55+</span>
-                                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600"><i data-lucide="x" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">High</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">e.g. Honey</p>
@@ -378,7 +378,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-emerald-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-emerald-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-emerald-900">0</span>
-                                    <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="check" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Optimal</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Erythrit</p>
@@ -395,7 +395,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-amber-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-amber-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-amber-900">1-34</span>
-                                    <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600"><i data-lucide="minus" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Niedrig</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Xylit</p>
@@ -412,7 +412,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-orange-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-orange-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-orange-900">35-54</span>
-                                    <div class="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600"><i data-lucide="alert-circle" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Mittel</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Maltit</p>
@@ -429,7 +429,7 @@ export async function renderGuide(container) {
                             <div class="flex flex-col h-full bg-red-50/30 rounded-2xl p-6 border border-border/50 border-t-4 border-t-red-400 hover:shadow-sm transition-all">
                                 <div class="mb-4 flex items-center justify-between">
                                     <span class="text-3xl font-serif font-bold text-red-900">55+</span>
-                                    <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600"><i data-lucide="x" class="w-4 h-4"></i></div>
+                                    
                                 </div>
                                 <h3 class="font-bold text-lg text-foreground mb-1">Hoch</h3>
                                 <p class="text-sm text-muted-foreground mb-4 border-b border-border/50 pb-4">z.B. Honig</p>

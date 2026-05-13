@@ -35,14 +35,10 @@ export async function renderAbout(container) {
                 <div class="w-full md:w-[35%] shrink-0 flex flex-col items-center md:items-start z-10 md:sticky md:top-32">
                     <div class="relative w-full aspect-[4/5] mb-6">
                         <img src="assets/images/founder.png" alt="${isEn ? 'Founder of DiaSweet' : 'Gründer von DiaSweet'}" class="w-full h-full rounded-[24px] shadow-md border border-border/40 object-cover" />
-                        <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-2xl shadow-lg border border-border/40 flex items-center justify-center">
-                            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-                                <i data-lucide="activity" class="w-5 h-5 text-primary"></i>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="text-center md:text-left w-full">
-                        <h3 class="font-bold text-lg text-foreground">Dominik</h3>
+                        <h3 class="font-bold text-lg text-foreground">Heiko</h3>
                         <p class="text-sm font-medium text-muted-foreground uppercase tracking-wider">${isEn ? 'Founder & Type 1 Diabetic' : 'Gründer & Typ-1-Diabetiker'}</p>
                     </div>
                 </div>
@@ -120,7 +116,7 @@ export async function renderAbout(container) {
                         : 'Um diese Datenbank kostenlos und werbefrei betreiben zu können, sind einige der Links auf DiaSweet sogenannte Affiliate-Links. Wenn du über diese Links (z.B. bei Amazon) ein Produkt bestellst, erhalte ich eine kleine Provision zur Deckung der Serverkosten. Für dich wird das Produkt dadurch natürlich <strong>keinen einzigen Cent teurer</strong>.'}
                 </p>
                 <div class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-xs font-bold text-muted-foreground border border-border/40 shadow-sm">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-green-500"></i> ${isEn ? 'Thank you for your support!' : 'Danke für deine Unterstützung!'}
+                    ${isEn ? 'Thank you for your support!' : 'Danke für deine Unterstützung!'}
                 </div>
             </section>
 
